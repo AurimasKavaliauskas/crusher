@@ -11,12 +11,17 @@ public class Gold3 : MonoBehaviour {
 		
 	}
     void OnCollisionEnter2D(Collision2D col)
-    {Debug.Log("colide");
+    {//Debug.Log("colide");
         if (col.gameObject.tag == "floor")
         {
-            Debug.Log("colide IF");
+          //  Debug.Log("colide IF");
             onTrack = true;   
             //    Instantiate(damageTakenParticle, transform.position, transform.rotation);
+        }
+        if (col.gameObject.tag == "SellP")
+        {
+            SelingPoint.gold += 1;
+            Destroy(gameObject);
         }
     }
     public void Movement()
@@ -29,7 +34,7 @@ public class Gold3 : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        Movement();
+    //    Movement();
       
 
     }

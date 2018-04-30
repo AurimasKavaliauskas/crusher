@@ -6,8 +6,8 @@ public class Spining : MonoBehaviour
 {
     public GameObject Spike;
     public float Speed;
-    Vector3 axisLeft = new Vector3(-6.88f, 0, 0);//asis sukimosi
-    Vector3 axisRight = new Vector3(6.88f, 0, 0);//asis sukimosi
+    Vector3 axisLeft = new Vector3(-6.70f, 0, 0);//asis sukimosi
+    Vector3 axisRight = new Vector3(6.70f, 0, 0);//asis sukimosi
                                                  // Use this for initialization
     void Start()
     {

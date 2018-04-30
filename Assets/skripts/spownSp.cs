@@ -15,7 +15,7 @@ public class spownSp : MonoBehaviour
         for (int i = 0; i < numObjects; i++)
         {
             int a = 360 / numObjects * i;
-            Vector3 pos = RandomCircle(diskas.transform.position, 6.63f, a);
+            Vector3 pos = RandomCircle(diskas.transform.position, 6.67f, a);
             if (a <= 180)
             {
                 float rotationDeg = -1 * a;
